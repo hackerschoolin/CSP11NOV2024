@@ -1,3 +1,5 @@
+# 27NOV2024 Commands Below
+
 useradd ezhaan -p Hacker@123 -s /usr/bin/zsh -m
 
 useradd abhiteja -p Hacker@123 -c IamIronMan -u 7777
@@ -30,3 +32,12 @@ usermod ganesh -U
 
 usermod ganesh -l wayne
 
+# 28NOV2024 Commands Below
+
+userdel chinni
+
+userdel -r chinni
+
+userdel -f chinni
+
+useradd pranay -m -p $(openssl passwd -1 chinni)
