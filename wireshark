@@ -1,0 +1,15 @@
+protocol
+Green=Good Filter, Orange=AlmostGood, Red=Bad
+
+ip.addr==10.0.0.1
+ip.src_host==10.0.0.1
+ip.dst_host==10.0.0.1
+udp.port==53
+tcp.port==80
+tcp.port!=80(! =)
+&& AND
+|| OR
+ip.addr==10.0.0.101 && tcp.port==80
+ip.addr==10.0.0.101 || ip.addr==10.0.0.102
+
+http.
