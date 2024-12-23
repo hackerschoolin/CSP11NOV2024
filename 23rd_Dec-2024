@@ -1,0 +1,14 @@
+Start SSH Server in Kali
+
+try to connect to kali from your windows to check (should be able to connect)
+
+In Windows Block 22 Port Outgoing in firewall
+
+and from windows try to connect to kali and verify(should not be able to connect)
+
+
+open edge and try to visit testphp.vulnweb.com(should open)
+
+block msedge.exe in firewall outgoing
+
+close msedge.exe and open again and try to visit the same page, (should not open)
