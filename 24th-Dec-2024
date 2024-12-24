@@ -1,0 +1,37 @@
+-p PROTOCOL
+
+iptables
+
+#Chains
+INPUT
+OUTPUT
+FORWARD
+
+#Actions
+ACCEPT
+DROP
+REJECT
+
+#Options
+-s SIP
+-d DIP
+--dport DPO
+--sport SPO
+-j ACTION
+-L --line-number #to see line numbers of rules
+-F #to delete all rules at once
+-D CHAINNAME NUM #to delete specific rules
+-D OUTPUT 2
+
+iptables-save > file.rules
+
+after restart
+
+iptables-restore file.rules
+
+
+apt install iptables-persistent -y
+
+systemctl enable netfilter-persistent
+
+iptables-save > /etc/iptables/rules.v4
